@@ -21,9 +21,9 @@ void MainWindow::showCurrentBlas(bool updateoption)
   //ui->currentBlasText->setText(QString("Current Blas: %1").arg(name));
   QString path = qApp->applicationDirPath();
 
-  QFile refblas(QString("%1/refblas.dll").arg(path));
-  QFile openblas(QString("%1/openblas.dll").arg(path));
-  QFile blas(QString("%1/blas.dll").arg(path));
+  QFile refblas(QString("%1/librefblas.dll").arg(path));
+  QFile openblas(QString("%1/libopenblas.dll").arg(path));
+  QFile blas(QString("%1/libblas.dll").arg(path));
   const char * name;
 
   if (refblas.size() == blas.size())
@@ -46,11 +46,10 @@ void MainWindow::showCurrentBlas(bool updateoption)
 
 void MainWindow::setCurrentBlas(const char *name)
 {
-  ui->currentBlasText->setText(QString("Current Blas: %1").arg(name));
   QString path = qApp->applicationDirPath();
 
-  QFile newblas(QString("%1/%2.dll").arg(path, name));
-  QFile blas(QString("%1/blas.dll").arg(path));
+  QFile newblas(QString("%1/lib%2.dll").arg(path, name));
+  QFile blas(QString("%1/libblas.dll").arg(path));
   if(!newblas.exists())
   {
      QMessageBox msgBox;
