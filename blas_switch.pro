@@ -20,7 +20,6 @@ HEADERS  += mainwindow.h
 FORMS    += mainwindow.ui
 
 # install
-# Target
-target.path = /usr/bin
+target.path = $$[QT_INSTALL_BINS]
 INSTALLS += target
 
