@@ -23,3 +23,6 @@ FORMS    += mainwindow.ui
 target.path = $$[QT_INSTALL_BINS]
 INSTALLS += target
 
+RESOURCES += \
+    resources.qrc
+

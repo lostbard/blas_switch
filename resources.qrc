@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>preferences-system.svg</file>
+    </qresource>
+</RCC>

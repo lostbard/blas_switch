@@ -93,6 +93,8 @@ void MainWindow::setCurrentBlas(const char *name)
         msgBox.exec();
     }
   }
+  newblas.close();
+  blas.close();
 
   showCurrentBlas(true);
 }
