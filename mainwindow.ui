@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>271</width>
-    <height>144</height>
+    <height>150</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -47,6 +47,9 @@
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
     <widget class="QLabel" name="currentBlasText">
+     <property name="whatsThis">
+      <string extracomment="Current BLAS setting"/>
+     </property>
      <property name="text">
       <string>Current Blas:</string>
      </property>
@@ -54,6 +57,9 @@
    </item>
    <item>
     <widget class="QRadioButton" name="refBlasOption">
+     <property name="whatsThis">
+      <string extracomment="Use Reference BLAS"/>
+     </property>
      <property name="text">
       <string>Reference BLAS</string>
      </property>
@@ -66,6 +72,9 @@
        <horstretch>0</horstretch>
        <verstretch>2</verstretch>
       </sizepolicy>
+     </property>
+     <property name="whatsThis">
+      <string extracomment="use Open BLAS"/>
      </property>
      <property name="text">
       <string>Open BLAS</string>
@@ -105,7 +114,7 @@
      </property>
     </widget>
    </item>
- </layout>
+  </layout>
  </widget>
  <resources>
   <include location="resources.qrc"/>
