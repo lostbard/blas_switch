@@ -27,5 +27,5 @@ RESOURCES += \
     resources.qrc
 
 # windows icon
-RC_ICON = blas_switch.ico
+RC_ICONS = blas_switch.ico
 
