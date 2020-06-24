@@ -26,3 +26,6 @@ INSTALLS += target
 RESOURCES += \
     resources.qrc
 
+# windows icon
+RC_ICON = blas_switch.ico
+

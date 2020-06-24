@@ -1,5 +1,5 @@
 <RCC>
     <qresource prefix="/icons">
-        <file>preferences-system.svg</file>
+        <file>blas_switch.ico</file>
     </qresource>
 </RCC>

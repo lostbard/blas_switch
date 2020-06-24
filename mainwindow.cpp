@@ -18,7 +18,6 @@ MainWindow::~MainWindow()
 
 void MainWindow::showCurrentBlas(bool updateoption)
 {
-  //ui->currentBlasText->setText(QString("Current Blas: %1").arg(name));
   QString path = qApp->applicationDirPath();
 
   QFile refblas(QString("%1/librefblas.dll").arg(path));
@@ -104,7 +103,6 @@ void MainWindow::on_buttonBox_clicked(QAbstractButton *button)
     qDebug("pressed %s", button->text().toUtf8().data());
     if(ui->buttonBox->buttonRole(button) == QDialogButtonBox::ApplyRole)
     {
-      ui->currentBlasText->setText("Apply");
       if(ui->refBlasOption->isChecked())
       {
         setCurrentBlas("refblas");
